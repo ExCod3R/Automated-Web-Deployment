@@ -20,4 +20,4 @@ jobs:
 
       - name: Deploy Website
         run: |
-          scp -r ./www/wwwroot/panel_ssl_site/* root@51.20.53.46:/var/www/html/
+          scp -r ./* root@51.20.53.46:www/wwwroot/panel_ssl_site/
