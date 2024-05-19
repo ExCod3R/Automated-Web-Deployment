@@ -16,8 +16,8 @@ jobs:
       - name: Install SSH key
         uses: webfactory/ssh-agent@v0.5.3
         with:
-          ssh-private-key: ${{ secrets.ANONWEB }}
+          ssh-private-key: ${{ secrets.ANONROOT }}
 
       - name: Deploy Website
         run: |
-          scp -o StrictHostKeyChecking=no -r ./* ubuntu@51.20.53.46:/www/wwwroot/web.anonlabz.com/    
+          scp -o StrictHostKeyChecking=no -r ./* root@51.20.53.46:/www/wwwroot/web.anonlabz.com/    
