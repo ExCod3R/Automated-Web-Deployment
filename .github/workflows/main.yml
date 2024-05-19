@@ -20,4 +20,4 @@ jobs:
 
       - name: Deploy Website
         run: |
-          scp -o StrictHostKeyChecking=no -r ./* ubuntu@51.20.53.46:/home/ubuntu/web.anonlabz.com/    
+          scp -o StrictHostKeyChecking=no -r ./* ubuntu@51.20.53.46:/www/wwwroot/web.anonlabz.com/    
